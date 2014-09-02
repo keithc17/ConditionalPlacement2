@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Declare two intergers
+    // Step 2: Declare two intergers
     CGFloat karl;
     CGFloat leonard;
     
@@ -29,7 +29,7 @@
     CGFloat karlPlace;
     CGFloat leonardPlace;
     
-    //if karl >7 set karlPlace to 1 else 2
+    //Step 3: if karl >7 set karlPlace to 1 else 2
     if (karl < 7) {
         karlPlace = 1;
     }
@@ -42,12 +42,26 @@
     leonardPlace = leonard > 7 ? 1 : 2;
     
     //Check if leonardPlace and karlPlace are both equal to 1
-    
-    
-    
-    
-    //Log that into the consol
-    NSLog(@"%f",bodyMassIndex);
+    if (leonardPlace == 1 && karlPlace == 1)
+    {
+        NSLog(@"%s","Both teachers are placed 1");
+        print( @"Both teachers are placed 1" );
+    }
+     //If they are not both 1 check if karlPlace is equal to 1
+    else if ( karlPlace == 1)
+    {
+        println( @"Karl is placed 1 and Leonard is placed 2" );
+    }
+    //If karlPlace is not equal to 1 check if leonardPlace is equal to 1
+    else if ( leonardPlace == 1 )
+    {
+        println( @"Leonard is placed 1 and Karl is placed 2" );
+    }
+    //If leonardPlace is not equal to 1
+    else if (leonardPlace != 1)
+    {
+      println( @"Karl and Leonard are placed 2");
+    }
     
     
     
